@@ -1,0 +1,45 @@
+# created by virtualenv automatically
+
+# venv в корне проекта
+bin/
+lib/
+include/
+pyvenv.cfg
+.Python
+
+# Python кэш/артефакты
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg-info/
+.build/
+dist/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE/OS
+.idea/
+.vscode/
+.DS_Store
+
+# Секреты/локальные настройки
+.env
+*.local
+
+# Временные/загружаемые файлы
+*.log
+tmp/
+*.tmp
+
+# Данные и индексы (тяжёлые, генерятся)
+vs_index/              # FAISS индекс
+pdf_files/*            # реальные PDF — лучше не коммитить
+!pdf_files/README.md   # можно оставить заглушку/описание
+
+# Кэш моделей/эмбеддингов (на всякий случай, если окажется в репо)
+.cache/
+.huggingface/
